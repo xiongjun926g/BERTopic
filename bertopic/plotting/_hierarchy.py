@@ -159,6 +159,9 @@ def visualize_hierarchy(topic_model,
         new_labels = ["_".join([label[0] for label in labels[:4]]) for labels in new_labels]
         new_labels = [label if len(label) < 30 else label[:27] + "..." for label in new_labels]
 
+    print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+    print(new_labels )
+
     # Stylize layout
     fig.update_layout(
         plot_bgcolor='#ECEFF1',
